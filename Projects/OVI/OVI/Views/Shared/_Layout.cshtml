@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - OVI Maromerol</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+    <body>
+<div style="text-align:center; bottom: 10px;">
+    <img src="~/Content/Imagenes/logoUNAD.png" width="400" height="80" />
+</div>
+<br />
+<div class="navbar navbar-inverse navbar navbar-inverse" style="background-color:#0b3f64">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Objeto Virtual de Información (OVI) ", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a href="~/Home/Index" style=" color: white">Inicio<b class="col"></b></a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" style=" color: white" class="dropdown-toggle" data-toggle="dropdown">Material de Lecturas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/Home/IntroducionHTML">Introduccion a HTML5</a></li>                                                   
+                            <li><a href="~/Home/IntroducionCSS3">Introduccion a CSS3</a></li>
+                            <li><a href="~/Home/EstructuraHTML_CSS">Estructura Basica HTML5 y CSS3</a></li>
+                       </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" style=" color: white" class="dropdown-toggle" data-toggle="dropdown">Material Multimedia <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/Reporte/Index">Consultar Reporte</a></li>
+                            <li><a href="/Reporte/Create">Crear Reporte</a></li>
+                            <li><a href="/Reporte/PorCorregir">Corregir Reporte</a></li>
+                            <li><a href="/Reporte/PorAprobar">Aprobar Reporte</a></li>
+                            <li><a href="/Reporte/PorVistoBuenoSoporte">Visto Bueno Soporte</a></li>
+                            <li><a href="/Reporte/PorAccion">Pendientes Por Acciones</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </div>
+    </div>
+</div>
+<div class="container body-content">
+    @RenderBody()
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Miguel Angel Romero Lezama</p>
+        <a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><img src="https://counter7.fcs.ovh/private/contadorvisitasgratis.php?c=sflmqmmjgumk8wqm9z69jhh6uwea67zl" border="0" title="contador de visitas" alt="contador de visitas"></a>
+
+    </footer>
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
+    </body>
+</html>
