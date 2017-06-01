@@ -1,0 +1,181 @@
+
+<!--defino que es un documento HTML5-->
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es"> <!--definir idioma-->
+<head>
+    <meta charset="utf-8"><!--asentos y ñ-->
+    <meta name="description" content="Diseño de OVI unidad 3 - Diseño de sitios web UNAD"><!--descripcion del sitio-->
+    <link rel="shourcut icon" type="image/x-icon" href="img/favicon.ico"><!--Inserccion de favicon-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+	<title>OVI-HTML5 y CSS3</title><!--titulo superior de la pagina-->
+</head>
+ <body>
+  <div style="text-align:center; bottom: 10px;">
+    <img src="content/img/logoUNAD.png" width="400" height="80" />
+  </div>
+  <div class="navbar navbar" style="background-color: #005883">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle">                
+            </button>            
+        </div>
+        <style type="text/css">
+            
+            * {
+                margin:0px;
+                padding:0px;
+            }
+            
+            #header {
+                margin:auto;
+                width:500px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            
+            ul, ol {
+                list-style:none;
+            }
+            
+            .nav > li {
+                float:left;
+            }
+            
+            .nav li a {
+                background-color:#005883;
+                color:#fff;
+                text-decoration:none;
+                padding:10px 12px;
+                display:block;
+            }
+            
+            .nav li a:hover {
+                background-color:#005883;
+            }
+            
+            .nav li ul {
+                display:none;
+                position:absolute;
+                min-width:140px;
+            }
+            
+            .nav li:hover > ul {
+                display:block;
+            }
+            
+            .nav li ul li {
+                position:relative;
+            }
+            
+            .nav li ul li ul {
+                right:-140px;
+                top:0px;
+            }
+            
+        </style>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="Index.html" style=" color: white">Objeto Virtual de Informacion</a>                        
+                    </li>
+                    <li class="dropdown">
+                        <a href="Index.html" style=" color: white">Inicio</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" style=" color: white" class="dropdown-toggle" data-toggle="dropdown">Material de Lecturas <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="~/Home/IntroducionHTML">Introduccion a HTML5</a></li>                                                   
+                            <li><a href="~/Home/IntroducionCSS3">Introduccion a CSS3</a></li>
+                            <li><a href="~/Home/EstructuraHTML_CSS">Estructura Basica HTML5 y CSS3</a></li>
+                       </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" style=" color: white" class="dropdown-toggle" data-toggle="dropdown">Material Multimedia <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/Reporte/Index">Consultar Reporte</a></li>
+                            <li><a href="/Reporte/Create">Crear Reporte</a></li>
+                            <li><a href="/Reporte/PorCorregir">Corregir Reporte</a></li>
+                            <li><a href="/Reporte/PorAprobar">Aprobar Reporte</a></li>
+                            <li><a href="/Reporte/PorVistoBuenoSoporte">Visto Bueno Soporte</a></li>
+                            <li><a href="/Reporte/PorAccion">Pendientes Por Acciones</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </div>
+    </div>
+</div>
+<div class="jumbotron">
+      <div class="container">
+        <h1>Objeto Virtual de Informacion</h1>
+        <p>El grupo colaborativo creará un Objeto Virtual de Información OVI y lo publicará en la Internet a través de un repositorio colaborativo de GITHUB por medio del servicio Github Pages.</p>
+        <p><a class="btn btn-primary btn-lg" href="Participantes.html" role="button">Participantes »</a></p>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Manual Identidad Institucional</h2>
+            <div style="text-align:justify;">
+                <p>
+                    La imagen institucional de la Universidad Nacional
+                    Abierta y a Distancia (UNAD)
+                    es fruto del trabajo de la comunidad universitaria que se abrio paso en el contexto
+                    educativo nacional gestando desde la creacion.
+                </p>
+                <p><a class="btn btn-default" href="~/Home/ManualII"> Ver mas &raquo;</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>E. de Ciencias Básicas, Tecnología e Ingeniería</h2>
+                <div style="text-align:justify;">
+                    <p>
+                        La Escuela de Ciencias Básicas, Tecnología e Ingeniería,
+                        tiene como misión contribuir a la educación para todos
+                        con programas en Ciencia, Tecnología e Ingeniería en la
+                        modalidad de educación a distancia
+                    </p>
+                    <p><a class="btn btn-default" <a href="https://academia.unad.edu.co/ecbti</a>"> Ver mas &raquo;</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Manual Identidad Institucional</h2>
+                    <div style="text-align:justify;">
+                        <p>
+                            La imagen institucional de la Universidad Nacional Abierta y a Distancia (UNAD)
+                            es fruto del trabajo de la comunidad universitaria que se abrio paso en el contexto
+                            educativo nacional gestando desde la creacion.
+                        </p>
+                        <p><a class="btn btn-default" href="~/Content/Pdf/Manual_Identidad_Institucional.pdf</a>"> Ver mas &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+             <hr />
+            <div style="text-align:center">
+                <img src="Content/Img/fondo1.jpg" width="1135" height="350" />
+            </div>
+
+
+<div class="container body-content">
+        <hr />
+    <footer>
+        <p>2017 - Miguel Angel Romero Lezama</p>
+        <a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><img src="https://counter7.fcs.ovh/private/contadorvisitasgratis.php?c=sflmqmmjgumk8wqm9z69jhh6uwea67zl" border="0" title="contador de visitas" alt="contador de visitas"></a>
+
+    </footer>
+</div>
+</body>
+</html>
